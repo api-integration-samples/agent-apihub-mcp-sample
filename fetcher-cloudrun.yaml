@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: fetcher-mcp-server
+spec:
+  template:
+    metadata:
+      annotations:
+        run.googleapis.com/execution-environment: gen2
+    spec:
+      containers:
+      - image: europe-west1-docker.pkg.dev/apigee-hub-demo/mcp-remote-fetcher/jae-jae/fetcher-mcp:latest
+        ports:
+        - containerPort: 3000
