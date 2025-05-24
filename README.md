@@ -3,11 +3,11 @@
 ## Install
 ```sh
 # create new virtual environment
-python -m venv .venv
+python3 -m venv .venv
 # activate venv
 source .venv/bin/activate
 # install packages
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Deploy
